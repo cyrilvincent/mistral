@@ -1,0 +1,9 @@
+**/venv/**
+*.iml
+*.xml
+.idea
+~$*
+.venv
+__pycache__
+.vscode
+
