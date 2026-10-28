@@ -1,3 +1,6 @@
+# A faire tourner avant webui à cause des conflits de pip install
+# Ou bien faire tourner dans Python 3.14
+
 from openai import OpenAI
 
 client = OpenAI(base_url="http://localhost:11434/v1", api_key="ollama")  # clé bidon, ignorée

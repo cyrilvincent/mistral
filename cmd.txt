@@ -7,7 +7,7 @@ linux : curl -fsSL https://ollama.com/install.sh | sh
 
 Depuis ollama
 ollama run mistral
-ollama run ministral-3:3b # Q4
+PAr défaut : ollama run ministral-3:3b # Q4
 ollama run mistral:7b-instruct-v0.3-q8_0 #Q8
 PowerShell : curl http://localhost:11434/api/generate -d {"model":"mistral","prompt":"Bonjour","stream":false}'
 
@@ -15,9 +15,10 @@ Depuis HuggingFace
 ollama run hf.co/<user>/<repo-GGUF>:Q5_K_M
 
 WebUI sans docker
-pip install open-webui
+python -m pip install open-webui
 open-webui serve
 localhost:8080
+mdp:cyril
 Ecoute sur le port 11434 par défaut sinon env : OLLAMA_BASE_URL=http://localhost:11434
 
 Depuis docker
